@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+     
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="./assets/css/adaptive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Shopify Theme</title>
+  </head>
+  <body class="sm:px-0 pt-5 px-[15px]">
+    <header class="bg-white text-black font-normal sticky top-0 z-50">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row justify-between align-center"
+      >
+        <div
+          class="leftmenu text-[14px] flex justify-between align-center gap-2"
+        >
+          <button class="font-normal">
+            <i class="fa-solid fa-bars mx-2 text-[16px]"></i>Menu
+          </button>
+          <button class="font-normal">
+            <i class="fa-solid fa-magnifying-glass mx-2 text-[16px]"></i>Search
+          </button>
+        </div>
+
+        <div class="middlemenu">
+          <svg
+            width="227"
+            height="88"
+            viewBox="0 0 151 16"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M67.637.293l3.816 9.205L75.269.293h2.725L71.746 15.39l-.293.294-.294-.294L64.911.293h2.726zm-13.712 0c1.468 0 2.86.767 3.627 1.887l-1.467 1.468h-.462c-.304-.65-.973-1.048-1.698-1.048-.863 0-1.672.71-1.72 1.614-.035.68.277 1.105.84 1.468.606.391.854.554 1.677 1.006.897.493 3.166 1.46 3.166 4.005 0 2.509-2.097 4.843-4.802 4.843-.347 0-.976-.039-1.446-.147-1.325-.321-2.129-.822-2.998-1.845l1.887-1.929.65.545c.293.23.937.693 1.55.776 1.246.169 2.082-.655 2.244-1.468.129-.642-.034-1.6-1.069-2.096 0 0-1.866-1.037-2.684-1.51-.833-.482-1.719-1.798-1.719-3.375 0-1.174.538-2.311 1.405-3.103.67-.614 1.589-1.09 3.019-1.09zM138.67 0l9.77 9.77V.587l.294-.294h1.929l.294.294v14.802h-.462l-9.602-9.602v9.309l-.294.293h-1.929l-.293-.293V.293L138.67 0zm-28.807.293v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zm9.225 0v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zM2.516.293v12.58h5.032v2.516H0V.587L.293.293h2.223zm14.257 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm111.54 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm-98.415 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.929l.293.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zm37.446 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.928l.294.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zM16.772 2.81a5.032 5.032 0 10.001 10.065 5.032 5.032 0 000-10.065zm111.541 0a5.032 5.032 0 100 10.065 5.032 5.032 0 000-10.065z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+
+        <div
+          class="right-menu text-[14px] flex justify-between align-center text-center"
+        >
+          <!-- <button>Contact us</button>
+            <i class="fa-regular fa-heart  p-[8px]"></i>
+            <i class="fa-regular fa-user  p-[8px]"></i>
+            <i class="fa-brands fa-shopify p-[8px]"></i> -->
+          <ul class="flex justify-between align-center py-6">
+            <li class="font-normal p-1 text-[14px]">Contact us</li>
+            <li><i class="fa-regular fa-heart p-[8px]"></i></li>
+            <li><i class="fa-regular fa-user p-[8px]"></i></li>
+            <li><i class="fa-brands fa-shopify p-[8px]"></i></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero w-full pb-[48px]">
+        <img
+          class="h-[40vh] sm:h-[90vh] w-full object-cover object-right sm:object-center"
+          src="./assets/img/hero/Women_SS25_WW_HP_Push_20250219_DI3.jpg"
+          alt=""
+        />
+
+        <div class="hero-text container mx-auto text-center relative">
+          <div class="inner-text text-white absolute inset-x-0 bottom-10">
+            <p class="text-[0.5rem] mb-0.5">WOMEN</p>
+            <h1 class="text-[2rem] mb-[1rem]">Spring-Summer 2025</h1>
+            <a class="text-[1rem] leading-[1.5rem] underline" href="#"
+              >Pre-order the Collection</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore">
+      <div class="container mx-auto text-centera explore pb-[80px]">
+        <h1 class="text-center text-2xl font-normal pb-[24px]">
+          Explore a Selection of the Maison's Creations
+        </h1>
+
+        <div
+          class="explore-box flex flex-col justify-between align-center gap-[1.4rem]"
+        >
+          <div
+            class="upper-explore-box flex flex-col justify-between align-center gap-[15px] font-size-[16px] sm:flex-row sm:justify-center align-center"
+          >
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/1_Women_Handbags_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Women's Handbags
+              </h3>
+            </div>
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/2_Women_Accessories_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Women's Bag Charms and Key Holders
+              </h3>
+            </div>
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/3_Women_WSLG_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Women's Wallets
+              </h3>
+            </div>
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/4_Women_Shoes_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Women's Shoes
+              </h3>
+            </div>
+          </div>
+          <div
+            class="down-explore-box flex flex-col justify-between align-center gap-[15px] font-size-[16px] sm:flex-row sm:justify-center align-center"
+          >
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/5_Travel_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Travel
+              </h3>
+            </div>
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/6_Men_WSLG_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Men's Card Holders
+              </h3>
+            </div>
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/7_Men_Shoes_Grey_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Men's Trainers
+              </h3>
+            </div>
+            <div class="mini-box-one w-full sm:w-1/4 h-auto cursor-pointer">
+              <img
+                src="./assets/img/explore/8_Men_RTW_WW_HP_Category_Push_DII.webp"
+                alt=""
+              />
+              <h3 class="text-center leading-[1.5rem] text-base py-3">
+                Men's Ready To Wear
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="men_photo">
+      <div class="men-photo w-full h-auto object-cover object-top pb-[128px]">
+        <img
+          class="h-auto w-full"
+          src="./assets/img/hero/Men_Formal_WW_HP_Push_20250219_DI3.webp"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="men_formal">
+      <div
+        class="men-formal-arival container relative mx-auto flex flex-col justify-between align-center pb-[128px]"
+      >
+        <div class="men-formal-header pb-[24px]">
+          <p class="text-center text-[10px] mb-[18px] leading-[1rem]">MEN</p>
+          <h2
+            class="text-center text-[2rem] leading-[2rem] font-normal pb-[24px]"
+          >
+            New Formal
+          </h2>
+        </div>
+
+        <div
+          class="men-collection flex flex-col justify-between align-center sm:flex-row gap-8"
+        >
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+
+            <div class="lolo ">
+              <div class="content  hidden group:hover-block">
+                
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                  alt=""
+                />
+
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                alt=""
+              />
+
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+              
+
+            </div>
+
+            <p class="text-[1rem] pt-[10px]">Fastline Backpack</p>
+            <p class="text-[#767676] text-[0.7rem]">$2,700.00</p>
+          </div>
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+
+            <div class="lolo ">
+              <div class="content  hidden group:hover-block">
+
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                alt=""
+              />
+                
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                  alt=""
+                />
+
+
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                alt=""
+              />
+
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                alt=""
+              />
+
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+
+            
+
+             
+
+            </div>
+
+            <p class="text-[1rem] pt-[10px]">Fastline Backpack</p>
+            <p class="text-[#767676] text-[0.7rem]">$2,700.00</p>
+          </div>
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+
+
+            <div class="lolo ">
+              <div class="content  hidden group:hover-block">
+                
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                  alt=""
+                />
+
+
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                alt=""
+              />
+
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                alt=""
+              />
+
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            </div>
+
+            <p class="text-[1rem] pt-[10px]">Fastline Backpack</p>
+            <p class="text-[#767676] text-[0.7rem]">$2,700.00</p>
+          </div>
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+
+
+
+            <div class="lolo ">
+              <div class="content  hidden group:hover-block">
+                <img
+                class="w-full h-auto cursor-pointer"
+                src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                alt=""
+              />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                  alt=""
+                />
+                <img
+                  class="w-[100px] h-auto"
+                  src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+
+
+            </div>
+
+            <p class="text-[1rem] pt-[10px]">Fastline Backpack</p>
+            <p class="text-[#767676] text-[0.7rem]">$2,700.00</p>
+          </div>
+        </div>
+
+        <button
+          class="border-1 w-full sm:w-1/4 absolute bottom-0 left-1/2 transform -translate-x-1/2 p-3 rounded-full mt-[3rem]"
+        >
+          Discover the Collection
+        </button>
+      </div>
+    </section>
+
+    <section id="fasion_photo">
+      <div
+        class="fashion-photo object-cover object-center pt-[128px] pb-[48px]"
+      >
+        <img
+          src="./assets/img/hero/Women_Sneakers_WW_HP_Push_20250219_DI3.webp"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="women_formal">
+      <div
+        class="women-formal-arival w-full container relative mx-auto flex flex-col justify-center align-center pb-[128px]"
+      >
+        <div class="women-formal-header pb-[24px]">
+          <p class="text-center text-[10px] mb-[18px] leading-[1rem]">WOMEN</p>
+          <h2
+            class="text-center text-[2rem] leading-[2rem] font-normal pb-[24px]"
+          >
+            Trainers
+          </h2>
+        </div>
+
+        <div class="women-collection flex flex-col sm:flex-row justify-between align-center gap-8">
+         
+
+          
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient group bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+              <div class="lolo ">
+                <div class="content  hidden group:hover-block">
+                  <img
+                    class="w-[100px] h-auto cursor-pointer"
+                    src="./assets/img/women-collection/4_louis-vuitton-lv-x-tm-lv-trainers--ASU008TM01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+            </div>
+
+            <p class="text-[1rem] pt-[15px]">LV X-TM Trainers</p>
+            <p class="text-[#767676] text-[0.7rem]">$1250.00</p>
+          </div>
+
+
+
+          
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient group bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+              <div class="lolo ">
+                <div class="content">
+                  <img
+                    class="w-[100px] h-auto cursor-pointer"
+                    src="./assets/img/women-collection/4_louis-vuitton-lv-x-tm-lv-trainers--ASU008TM01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+            </div>
+
+            <p class="text-[1rem] pt-[15px]">LV X-TM Trainers</p>
+            <p class="text-[#767676] text-[0.7rem]">$1250.00</p>
+          </div>
+
+          
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient group bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+              <div class="lolo">
+                <div class="content">
+                  <img
+                    class="w-[100px] h-auto cursor-pointer"
+                    src="./assets/img/women-collection/4_louis-vuitton-lv-x-tm-lv-trainers--ASU008TM01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+            </div>
+
+            <p class="text-[1rem] pt-[15px]">LV X-TM Trainers</p>
+            <p class="text-[#767676] text-[0.7rem]">$1250.00</p>
+          </div>
+
+
+          
+
+          <div class="single-collection-box w-full lg:w-1/5">
+            <div
+              class="image-cover-gradient group bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] relative"
+            >
+              <div class="lolo ">
+                <div class="content">
+                  <img
+                    class="w-[100px] h-auto cursor-pointer"
+                    src="./assets/img/women-collection/4_louis-vuitton-lv-x-tm-lv-trainers--ASU008TM01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/4_louis-vuitton-lv-classic-trainers--BTU002PC01_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/3_louis-vuitton-pont-neuf-35mm-belt--M4020T_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/2_louis-vuitton-wool-silk-double-face-blouson--HTFB2EQJW900_PM2_Front view.avif"
+                    alt=""
+                  />
+                  <img
+                    class="w-[100px] h-auto"
+                    src="./assets/img/men-collection/1_louis-vuitton-fastline-backpack--M21367_PM2_Front view.avif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              
+            </div>
+
+            <p class="text-[1rem] pt-[15px]">LV X-TM Trainers</p>
+            <p class="text-[#767676] text-[0.7rem]">$1250.00</p>
+          </div>
+
+
+        </div>
+
+        <button
+          class="border-1 sm:w-1/4 w-full absolute bottom-0 left-1/2 transform -translate-x-1/2 p-3 rounded-full mt-[3rem]"
+        >
+          Discover the Collection
+        </button>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="service container mx-auto p-[80px]">
+        <div class="service-head mb-[24px]">
+          <h2 class="text-center text-[2rem] font-normal mb-[16px]">
+            Louis Vuitton Service
+          </h2>
+          <p class="text-center text-[#767676] text-[16px] font-normal">
+            Louis Vuitton offers complimentary wrapping on all orders, carefully
+            packaged in the Maison's iconic boxes.
+          </p>
+        </div>
+
+        <div
+          class="service-box flex flex-col sm:flex-row justify-between align-center gap-8"
+        >
+          <div
+            class="service-box-item flex flex-col justify-center align-center"
+          >
+            <img
+              src="./assets/img/service/LV_ContactUs_WW_HP_Services_Push_20240425_DII.webp"
+              alt=""
+            />
+            <h3 class="text-center text-[1.125rem] pt-3 mb-[1rem]">Services</h3>
+            <a class="text-center text-[0.8rem] underline" href="#"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="service-box-item flex flex-col justify-center align-center"
+          >
+            <img
+              src="./assets/img/service/2_LV_Gifting_WW_HP_Services_Push_20240425_DII.webp"
+              alt=""
+            />
+            <h3 class="text-center text-[1.125rem] pt-3 mb-[1rem]">
+              Art of Gifting
+            </h3>
+            <div class="double-link-tag flex justify-around align-center">
+              <a class="text-center text-[0.8rem] underline" href="#"
+                >Gift for Her</a
+              >
+              <a class="text-center text-[0.8rem] underline" href="#"
+                >Gift for Him</a
+              >
+            </div>
+          </div>
+          <div
+            class="service-box-item flex flex-col justify-center align-center"
+          >
+            <img
+              src="./assets/img/service/3_LV_Personalization_WW_HP_Services_Push_20240425_DII.jpg"
+              alt=""
+            />
+            <h3 class="text-center text-[1.125rem] pt-3 mb-[1rem]">
+              Personalisation
+            </h3>
+            <a class="text-center text-[0.8rem] underline" href="#">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer border-1 border-gray-400 border-left-0 border-right-0">
+        <div
+          class="inner-footer-box container mx-auto text-[14px] mb-[16px] flex flex-col sm:flex-row justify-between sm:justify-center align-center gap-8 pt-[40px]"
+        >
+          <div class="single-footer-box w-full sm:w-1/2">
+            <h6 class="text-[10px] pb-[24px]">HELP</h6>
+            <p class="mb-[16px]">
+              <span class="underline">Contact Us</span>Our Client Advisors will
+              be delighted to assist you on
+              <span class="underline"
+                >+44 207 998 6286 , email or WhatsApp</span
+              >
+            </p>
+            <p class="mb-[16px]">FAQ</p>
+            <p class="mb-[16px]">Product Care</p>
+            <p>Stores</p>
+          </div>
+          <div class="single-footer-box">
+            <h6 class="text-[10px] pb-[24px]">SERVICES</h6>
+            <p class="mb-[16px]"><span>Repairs</span></p>
+            <p class="mb-[16px]">Personalisation</p>
+            <p class="mb-[16px]">Art of Gifting</p>
+            <p class="mb-[16px]">Download LV Apps</p>
+          </div>
+          <div class="single-footer-box">
+            <h6 class="text-[10px] pb-[24px]">ABOUT LOUIS VUITTON</h6>
+            <p class="mb-[16px]">Fashion Shows</p>
+            <p class="mb-[16px]">Arts & Culture</p>
+            <p class="mb-[16px]">The Maison Louis Vuitton</p>
+            <p class="mb-[16px]">Susstainability</p>
+            <p class="mb-[16px]">Latest News</p>
+            <p class="mb-[16px]">Careers</p>
+            <p class="mb-[16px]">Foundation Louis Vuitton</p>
+          </div>
+          <div class="single-footer-box w-1/2">
+            <h6 class="text-[10px] pb-[24px]">CONNECT</h6>
+            <p class="mb-[16px]">
+              <span>Sign up</span>for Louis Vuitton emails and receive the
+              latest news from the Maison, including exclusive online
+              pre-launches and new collections.
+            </p>
+            <p class="mb-[16px]">Follow Us</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-bottom">
+      <div class="footer-bootm-content py-8">
+        <div
+          class="footer-bottom-box flex flex-col sm:flex-row justify-between align-center container mx-auto pb-[16px]"
+        >
+          <div class="left-bottom-border w-1/2 text-[10px]">
+            <p>
+              Ship to :
+              <span
+                ><i
+                  class="fa-solid fa-flag-usa text-[16px] px-3 text-red-500"
+                ></i
+                >United Kingdom</span
+              >
+            </p>
+          </div>
+
+          <div class="middle-bottom-border w-1/3">
+            <svg
+              width="120"
+              height="88"
+              viewBox="0 0 151 16"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M67.637.293l3.816 9.205L75.269.293h2.725L71.746 15.39l-.293.294-.294-.294L64.911.293h2.726zm-13.712 0c1.468 0 2.86.767 3.627 1.887l-1.467 1.468h-.462c-.304-.65-.973-1.048-1.698-1.048-.863 0-1.672.71-1.72 1.614-.035.68.277 1.105.84 1.468.606.391.854.554 1.677 1.006.897.493 3.166 1.46 3.166 4.005 0 2.509-2.097 4.843-4.802 4.843-.347 0-.976-.039-1.446-.147-1.325-.321-2.129-.822-2.998-1.845l1.887-1.929.65.545c.293.23.937.693 1.55.776 1.246.169 2.082-.655 2.244-1.468.129-.642-.034-1.6-1.069-2.096 0 0-1.866-1.037-2.684-1.51-.833-.482-1.719-1.798-1.719-3.375 0-1.174.538-2.311 1.405-3.103.67-.614 1.589-1.09 3.019-1.09zM138.67 0l9.77 9.77V.587l.294-.294h1.929l.294.294v14.802h-.462l-9.602-9.602v9.309l-.294.293h-1.929l-.293-.293V.293L138.67 0zm-28.807.293v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zm9.225 0v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zM2.516.293v12.58h5.032v2.516H0V.587L.293.293h2.223zm14.257 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm111.54 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm-98.415 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.929l.293.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zm37.446 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.928l.294.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zM16.772 2.81a5.032 5.032 0 10.001 10.065 5.032 5.032 0 000-10.065zm111.541 0a5.032 5.032 0 100 10.065 5.032 5.032 0 000-10.065z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="right-bottom-border w-1/3">
+            <ul
+              class="flex flex-col sm:flex-row justify-between align-center gap-[10px] text-[10px]"
+            >
+              <li>Sitemap</li>
+              <li>Legal & privacy</li>
+              <li>Cookies</li>
+              <li>MSA Trasnparency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      
+    ></script>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
+
+<!-- npx @tailwindcss/cli -i ./src/assets/css/tailwind.css  -o ./src/assets/css/style.css --watch -->

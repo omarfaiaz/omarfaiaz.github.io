@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="./assets/css/adaptive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <title>Shopify Theme</title>
+  </head>
+<body class="sm:px-0 px-[15px]">
+
+
+    <header class="bg-transparent hover:bg-white text-black font-normal sticky top-0 z-50">
+        <div
+          class="container mx-auto flex flex-col sm:flex-row justify-between align-center"
+        >
+          <div
+            class="leftmenu text-[14px] flex justify-between align-center gap-2"
+          >
+            <button class="font-normal">
+              <i class="fa-solid fa-bars mx-2 text-[16px]"></i>Menu
+            </button>
+            <button class="font-normal">
+              <i class="fa-solid fa-magnifying-glass mx-2 text-[16px]"></i>Search
+            </button>
+          </div>
+  
+          <div class="middlemenu">
+            <svg
+              width="227"
+              height="88"
+              viewBox="0 0 151 16"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M67.637.293l3.816 9.205L75.269.293h2.725L71.746 15.39l-.293.294-.294-.294L64.911.293h2.726zm-13.712 0c1.468 0 2.86.767 3.627 1.887l-1.467 1.468h-.462c-.304-.65-.973-1.048-1.698-1.048-.863 0-1.672.71-1.72 1.614-.035.68.277 1.105.84 1.468.606.391.854.554 1.677 1.006.897.493 3.166 1.46 3.166 4.005 0 2.509-2.097 4.843-4.802 4.843-.347 0-.976-.039-1.446-.147-1.325-.321-2.129-.822-2.998-1.845l1.887-1.929.65.545c.293.23.937.693 1.55.776 1.246.169 2.082-.655 2.244-1.468.129-.642-.034-1.6-1.069-2.096 0 0-1.866-1.037-2.684-1.51-.833-.482-1.719-1.798-1.719-3.375 0-1.174.538-2.311 1.405-3.103.67-.614 1.589-1.09 3.019-1.09zM138.67 0l9.77 9.77V.587l.294-.294h1.929l.294.294v14.802h-.462l-9.602-9.602v9.309l-.294.293h-1.929l-.293-.293V.293L138.67 0zm-28.807.293v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zm9.225 0v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zM2.516.293v12.58h5.032v2.516H0V.587L.293.293h2.223zm14.257 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm111.54 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm-98.415 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.929l.293.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zm37.446 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.928l.294.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zM16.772 2.81a5.032 5.032 0 10.001 10.065 5.032 5.032 0 000-10.065zm111.541 0a5.032 5.032 0 100 10.065 5.032 5.032 0 000-10.065z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+  
+          <div
+            class="right-menu text-[14px] flex justify-between align-center text-center"
+          >
+            <!-- <button>Contact us</button>
+              <i class="fa-regular fa-heart  p-[8px]"></i>
+              <i class="fa-regular fa-user  p-[8px]"></i>
+              <i class="fa-brands fa-shopify p-[8px]"></i> -->
+            <ul class="flex justify-between align-center py-6">
+              <li class="font-normal p-1 text-[14px]">Contact us</li>
+              <li><i class="fa-regular fa-heart p-[8px]"></i></li>
+              <li><i class="fa-regular fa-user p-[8px]"></i></li>
+              <li><i class="fa-brands fa-shopify p-[8px]"></i></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+
+
+
+    <section id="cart-system">
+        <div class="cart-system-section flex flex-col sm:flex-row justify-between items-start">
+            <div class="left-side w-full sm:w-1/2 h-auto">
+
+
+              <ul>
+                <li><img class="w-full h-auto" src="./assets/img/single-page/louis-vuitton-speedy-bandouliere-25-bag--M14043_PM1_Cropped worn view.avif" alt=""></li>
+
+
+                <li class="extra_images"><img class="w-full  h-auto bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] " src="./assets/img/single-page/louis-vuitton-speedy-bandouliere-25-bag--M14043_PM1_Back view.avif" alt=""></li>
+
+                <li class="extra_images"><img class="w-full  h-auto bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] object-cover object-center" src="./assets/img/single-page/louis-vuitton-speedy-bandouliere-25-bag--M14043_PM1_Closeup view.webp" alt=""></li>
+
+                <li class="extra_images"><img class="w-full h-auto bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] object-cover object-center" src="./assets/img/single-page/louis-vuitton-speedy-bandouliere-25-bag--M14043_PM1_Side view.avif" alt=""></li>
+
+
+                <li class="extra_images">
+                  <img class="w-full h-auto" src="./assets/img/single-page/louis-vuitton-speedy-bandouliere-25-bag--M14043_PM1_Worn view.avif" alt="">
+                </li>
+
+              </ul>
+                
+
+                
+
+                
+
+
+                
+
+
+                
+                
+            </div>
+            <div class="right-side text-[14px] w-full sm:w-1/2">
+
+              <div class="secondary-info  sm:w-1/2 ">
+
+                <div class="product-head">
+                  <div class="product-code flex justify-between items-center mb-[4px]">
+                    <p>M14043</p>
+
+                    <i class="fa-regular fa-heart"></i>
+
+                  </div>
+
+                  <div class="comercial-tag mb-[24px]">
+                    <p class="text-[#767676]">New</p>
+                    <h1 class="mb-[4px]">Speedy Bandouliere 25 Bag</h1>
+                    <span >$2020.00</span>
+                  </div>
+                </div>
+
+                <div class="product-variation pb-[16px]">
+                  <div class="tag flex justify-between items-center mb-[12px]">
+                    <p>Colours</p>
+                    <div class="varient">
+                      <p>Chocolate</p>
+                    </div>
+                  </div>
+                  <div class="product-image flex ">
+
+                    <img class="w-1/2 bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] hover:border-1" src="./assets/img/varient/1_louis-vuitton-speedy-bandouliere-25-bag--M59273_PM2_Front view.avif" alt="">
+
+                    <img class="w-1/2 bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] hover:border-1" src="./assets/img/varient/2_louis-vuitton-speedy-bandouliere-25-bag--M58951_PM2_Front view.avif" alt="">
+
+
+                  </div>
+                </div>
+
+
+                <div class="material-button flex flex-col items-start">
+
+                  <button class="lv-product-variation-selector flex justify-between py-[12px] w-full border-t-1 border-b-1" aria-expanded="false">
+                    <span class="lv-product-variation-selector__title font-bold">
+                      Materials
+                    </span>
+                    <span class="lv-product-variation-selector__value">
+                      Monogram Empreinte Leather
+                    </span>
+                  </button>
+
+
+                  <button class="lv-product-variation-selector flex justify-between py-[12px] w-full" aria-expanded="false"><span class="lv-product-variation-selector__title font-bold">
+                    Other Sizes
+                  </span> <span class="lv-product-variation-selector__value">
+                    OnTheGo PM Tote Bag
+                  </span> <!----> <span class="sr-only">currently selected</span> </button>
+
+                </div>
+
+
+                <div class="add-button flex flex-col items-center my-[24px] gap-5">
+
+                  <button class="text-white bg-black p-[15px] rounded-full w-full">Add to Shopping Bag</button>
+
+                  <a class="underline w-full text-center" href="#">Chech In-Store Availability</a>
+
+                </div>
+
+                <div>
+                  <p class="text-[14px] text-[#767676] my-[20px]">Complimentary delivery & returns</p>
+                </div>
+
+
+                <div class="seemore-text mb-[24px]">
+
+                  <p class="see-more-text text-[0.87rem]">Inspired by Louis Vuitton’s famous Sac Plat from 1968, the OnTheGo PM tote bag is fashioned in Monogram Empreinte leather, embossed with a subtle embossed Giant Monogram pattern.</p> 
+
+
+                  <div id="extratext"> 
+                    <span> This smaller version of the original Onthego fits essentials such as a mini tablet. Articulated top handles and an adjustable removable strap offer a variety of carry options. </span>
+                    <p >
+                      25 x 19 x 11.5 cm
+                      (Length x height x width )
+                      Black
+                      Embossed grained cowhide leather
+                      Grained cowhide leather trim
+                      Microfibre lining
+                      Gold-colour hardware
+                      Zipped flat inside pocket
+                      Double inside pocket
+                      4 riveted corner tabs
+                      Fits: a smartphone, a Sarah Long Wallet, keys, tissues, a book and lipstick
+                      Strap: Removable, adjustable
+                      Strap Drop: 48.0 cm
+                      Strap Drop Max: 52.0 cm
+                      Handle: Single x2
+                      This reference is either made in France, Spain, Italy or the US.
+                    </p>
+                  </div>
+
+                  
+
+                  
+
+                  
+                
+
+                  <div>
+
+                     <button id="seemore" class="underline cursor-pointer text-[14px]">See more</button>
+
+                  </div>
+
+                <div class="Sustainability cursor-pointer border-t-1 border-b-1 mt-7 py-[16px]">
+                  <div class="flex justify-between items-center">
+                    <h2 id="sustain_block" class="sustain-title cursor-pointer">Sustainability</h2>
+                    <i id="plus" class="fa-solid fa-plus"></i>
+
+                  </div>
+                  <p id="sustain_text" class="sustain-text pt-[15px]">The leather used in this product comes from a tannery audited and certified by the Leather Working Group (LWG), which is the highest environmental standard in terms of leather tanning. This standard requires tanneries to reduce their water and energy consumption, as well as their use of potentially hazardous substances. The tanneries we work with are located in Europe and are committed partners who work with us in our efforts for responsible sourcing and continuous improvement (implementation of material traceability systems, fighting against deforestation practices).</p>
+                </div>
+                <div class="Product-care border-b-1 py-[16px]">
+                  <div class="flex justify-between items-center">
+                    <h2 id="lala"  class="product-care-tittle cursor-pointer">Product care</h2>
+                    <i id="plas" class="fa-solid fa-plus"></i>
+                  </div>
+                  <p id="product_text" class="product-care-text pt-[15px]">To maintain the quality of your Monogram canvas product, we recommend that you follow the care instructions:
+
+                    Beware not to scratch or rub your product against abrasive surfaces, especially the leather trim.
+                    Keep your product away from damp or humid environments and avoid direct exposure to sunlight. Keep your product away from any direct source of heat (radiators, car interiors overheated by the sun, etc).
+                    Avoid contact with greasy substances, cosmetics, perfume and hydroalcoholic solutions as well as any material (magazines, other leathers, etc.) that may transfer coloured pigments onto the product.
+                    Keep your product away from water. Should it get wet or dirty on the surface, dry with a lint-free, light-coloured and absorbent cloth. Never use soap or solvent.
+                    In order to protect your product when you are not using it, store it in the felt protective pouch provided.
+                    Ageing: Monogram Empreinte leather will become more supple and beautiful with time. The embossing will evolve as a testimony to its owner's experiences, giving each bag a personal and unique touch.
+                    Taking proper care of your Louis Vuitton product will allow you to fully appreciate its beauty over the years. For any enquiries about your product, please do not hesitate to contact any Louis Vuitton store.</p>
+                </div>
+
+
+
+               </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="look" >
+        <div class="look container mx-auto my-[48px] ">
+
+            <h2 class="text-left ">Get the Look</h2>
+
+        </div>
+
+
+        <div class="look-photo flex flex-col  sm:flex-row justify-between items-start">
+            <div class="first-look-image w-full sm:w-1/2">
+                <img src="./assets/img/single-page/1_louis-vuitton-speedy-bandouliere-25--M14043_PM1_Look view.webp" alt="">
+            </div>
+
+            <div class="second-look-image flex justify-between items-start w-full sm:w-1/2">
+
+                <div class="bag w-1/2">
+                    <img class="bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)]" src="./assets/img/single-page/2_louis-vuitton-lv-elephant-bag-charm--M02384_PM2_Front view.avif" alt="">
+
+                    <p class="text-[1rem] pt-[10px]">Fastline Backpack</p>
+                    <p class="text-[#767676] text-[0.7rem]">$2,700.00</p>
+                </div>
+
+                <div class="jacket w-1/2">
+                    <img class="bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)]" src="./assets/img/single-page/3_louis-vuitton-double-face-check-zip-up-jacket--FSJA16RAN703_PM2_Front view.avif" alt="">
+
+                    <p class="text-[1rem] pt-[10px]">Fastline Backpack</p>
+                    <p class="text-[#767676] text-[0.7rem]">$2,700.00</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="look-below" >
+      <div class="look-below container mx-auto my-[48px] ">
+
+          <h2 class="text-left ">Recently Viewed</h2>
+
+      </div>
+
+
+      <div class="recent-view w-1/2">
+
+
+        <div class="product-image flex w-1/2 ">
+
+          <img class=" bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] hover:border-1" src="./assets/img/varient/1_louis-vuitton-speedy-bandouliere-25-bag--M59273_PM2_Front view.avif" alt="">
+
+          <img class=" bg-[url(https://uk.louisvuitton.com/static_lvfront/product-card-gradients/gradient_default.svg)] hover:border-1" src="./assets/img/varient/2_louis-vuitton-speedy-bandouliere-25-bag--M58951_PM2_Front view.avif" alt="">
+
+
+        </div>
+
+      </div>
+
+
+      
+
+      
+
+  </section>
+
+
+
+
+
+
+
+
+    <section id="footer">
+        <div class="footer mt-5 ">
+          <div
+            class="inner-footer-box container mx-auto text-[14px] mb-[16px] flex flex-col sm:flex-row justify-between sm:justify-center align-center gap-8 pt-[40px]"
+          >
+            <div class="single-footer-box w-full sm:w-1/2">
+              <h6 class="text-[10px] pb-[24px]">HELP</h6>
+              <p class="mb-[16px]">
+                <span class="underline">Contact Us</span>Our Client Advisors will
+                be delighted to assist you on
+                <span class="underline"
+                  >+44 207 998 6286 , email or WhatsApp</span
+                >
+              </p>
+              <p class="mb-[16px]">FAQ</p>
+              <p class="mb-[16px]">Product Care</p>
+              <p>Stores</p>
+            </div>
+            <div class="single-footer-box">
+              <h6 class="text-[10px] pb-[24px]">SERVICES</h6>
+              <p class="mb-[16px]"><span>Repairs</span></p>
+              <p class="mb-[16px]">Personalisation</p>
+              <p class="mb-[16px]">Art of Gifting</p>
+              <p class="mb-[16px]">Download LV Apps</p>
+            </div>
+            <div class="single-footer-box">
+              <h6 class="text-[10px] pb-[24px]">ABOUT LOUIS VUITTON</h6>
+              <p class="mb-[16px]">Fashion Shows</p>
+              <p class="mb-[16px]">Arts & Culture</p>
+              <p class="mb-[16px]">The Maison Louis Vuitton</p>
+              <p class="mb-[16px]">Susstainability</p>
+              <p class="mb-[16px]">Latest News</p>
+              <p class="mb-[16px]">Careers</p>
+              <p class="mb-[16px]">Foundation Louis Vuitton</p>
+            </div>
+            <div class="single-footer-box w-1/2">
+              <h6 class="text-[10px] pb-[24px]">CONNECT</h6>
+              <p class="mb-[16px]">
+                <span>Sign up</span>for Louis Vuitton emails and receive the
+                latest news from the Maison, including exclusive online
+                pre-launches and new collections.
+              </p>
+              <p class="mb-[16px]">Follow Us</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="footer-bottom">
+        <div class="footer-bootm-content py-8">
+          <div
+            class="footer-bottom-box flex flex-col sm:flex-row justify-between align-center container mx-auto pb-[16px]"
+          >
+            <div class="left-bottom-border w-1/2 text-[10px]">
+              <p>
+                Ship to :
+                <span
+                  ><i
+                    class="fa-solid fa-flag-usa text-[16px] px-3 text-red-500"
+                  ></i
+                  >United Kingdom</span
+                >
+              </p>
+            </div>
+  
+            <div class="middle-bottom-border w-1/3">
+              <svg
+                width="120"
+                height="88"
+                viewBox="0 0 151 16"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M67.637.293l3.816 9.205L75.269.293h2.725L71.746 15.39l-.293.294-.294-.294L64.911.293h2.726zm-13.712 0c1.468 0 2.86.767 3.627 1.887l-1.467 1.468h-.462c-.304-.65-.973-1.048-1.698-1.048-.863 0-1.672.71-1.72 1.614-.035.68.277 1.105.84 1.468.606.391.854.554 1.677 1.006.897.493 3.166 1.46 3.166 4.005 0 2.509-2.097 4.843-4.802 4.843-.347 0-.976-.039-1.446-.147-1.325-.321-2.129-.822-2.998-1.845l1.887-1.929.65.545c.293.23.937.693 1.55.776 1.246.169 2.082-.655 2.244-1.468.129-.642-.034-1.6-1.069-2.096 0 0-1.866-1.037-2.684-1.51-.833-.482-1.719-1.798-1.719-3.375 0-1.174.538-2.311 1.405-3.103.67-.614 1.589-1.09 3.019-1.09zM138.67 0l9.77 9.77V.587l.294-.294h1.929l.294.294v14.802h-.462l-9.602-9.602v9.309l-.294.293h-1.929l-.293-.293V.293L138.67 0zm-28.807.293v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zm9.225 0v2.223l-.294.293h-2.222v12.58h-2.516V2.809h-2.516V.587l.294-.294h7.254zM2.516.293v12.58h5.032v2.516H0V.587L.293.293h2.223zm14.257 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm111.54 0a7.548 7.548 0 110 15.096 7.548 7.548 0 010-15.096zm-98.415 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.929l.293.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zm37.446 0l.293.294v9.77a2.516 2.516 0 005.032 0V.587l.294-.294h1.928l.294.294v9.77a5.032 5.032 0 01-10.064 0V.587l.294-.294h1.929zm15.389 0v14.803l-.294.293h-2.222V.587l.293-.294h2.223zM16.772 2.81a5.032 5.032 0 10.001 10.065 5.032 5.032 0 000-10.065zm111.541 0a5.032 5.032 0 100 10.065 5.032 5.032 0 000-10.065z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+  
+            <div class="right-bottom-border w-1/3">
+              <ul
+                class="flex flex-col sm:flex-row justify-between align-center gap-[10px] text-[10px]"
+              >
+                <li>Sitemap</li>
+                <li>Legal & privacy</li>
+                <li>Cookies</li>
+                <li>MSA Trasnparency</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      
+    ></script>
+
+      <script src="./assets/js/index.js"></script>
+
+</body>
+</html>

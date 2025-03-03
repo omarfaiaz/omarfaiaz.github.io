@@ -1,0 +1,42 @@
+.secondary-info{
+    margin: 128px 137px 48px;
+}
+
+
+@media only screen and (max-width:450px) {
+    .secondary-info{
+        margin: 50px 15px ;
+    }
+
+    .extra_images{
+        display: none;
+    }
+}
+
+
+.product-care-text{
+    display: none;
+}
+
+.sustain-text{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.see-more-text span{
+    display: none;
+}
+
+#extratext{
+    display: none;
+}
+
+
+.show{
+    display: block;
+}
+
+
+#slider{
+    display: none;
+}
